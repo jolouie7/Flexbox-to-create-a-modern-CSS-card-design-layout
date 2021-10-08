@@ -1,0 +1,39 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+.cards {
+   display: flex;
+   justify-content: space-between;
+}
+
+.card {
+   background-color: aquamarine;
+   border: 1px solid black;
+   width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+   .cards {
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   .card {
+      flex: 0 1 calc(50%);
+   }
+}
+
+/* @media screen and (max-width: 550px) {
+   .cards {
+      flex-direction: column;
+   }
+} */
+
+@media screen and (max-width: 550px) {
+    .card {
+        flex: 0 1 calc(100%);
+    }
+}
